@@ -27,7 +27,7 @@
 │   ├── questions/         #   模擬題（題目卷、答案卷、測驗結果）與弱點專項測驗
 │   ├── 學習評估.md         #   歷次成績與診斷紀錄
 │   └── .claude/skills/    #   clf-exam skill（出題、評估規範）
-├── lecture_notes/         # 依單元整理的筆記（d04 開發者日常 ~ a13 事件驅動）與上課日誌
+├── lecture_notes/         # 依單元整理的筆記（d04 開發者日常 ~ a20 Agent 安全）與上課日誌
 ├── implements/            # 每日動手做紀錄與驗收表（d01, a01, a03）
 │   └── a03_implement/     #   S3 CLI 操作實作 + Deny HTTP 的 Policy 範例
 ├── references/            # 題庫參考資料（CLF-C02、SAA-C03 PDF）
@@ -80,6 +80,11 @@ D04 與 A01～A13 的原始 PDF 講義（D05 起已重新編號為 A01 起，A01
 - `a11_api_gateway.md`：API Gateway 與認證（講義 A11），REST vs HTTP API、用量計畫、Lambda proxy 整合與 502、Cognito 與三種授權器、CORS 預檢排查，含帶認證的 REST API 實作
 - `a12_dynamodb.md`：DynamoDB 深潛（講義 A12），單表設計與 GSI、on-demand vs provisioned、RCU／WCU、Streams、DAX，含五個查詢需求的單表設計作業
 - `a13_event_driven.md`：事件驅動架構（講義 A13），SQS 標準 vs FIFO、可見性逾時與死信佇列、SNS 扇出與 filter policy、EventBridge、批次部分失敗，含讓失敗訊息不消失的實作
+- `a16_context_engineering.md`：LLM 應用基礎與 Context Engineering（講義 A16），token 與幻覺、Bedrock 定價與快取、temperature／Top P、JSON Schema、工具呼叫往返，含手刻 Agent 迴圈實作
+- `a17_rag.md`：RAG（講義 A17），切塊與向量檢索、三種失敗模式、混合檢索／重排序等改善手段、召回率與精確率、託管 vs 手刻與向量儲存成本、Agentic RAG，含修好爛掉的 RAG 實作
+- `a18_multi_agent_mcp.md`：多 Agent 與 MCP（講義 A18），何時不該拆、四種拓撲、脈絡隔離與交接物、MCP Host／Client／Server、工具描述設計原則
+- `a19_agent_eval_observability.md`：Agent 評估與可觀測性（講義 A19），執行軌跡欄位、從失敗長評估集、五類指標與門檻、模型評分者校準、評估進 CI
+- `a20_agent_security_frameworks.md`：Agent 安全與框架選型（講義 A20），直接 vs 間接注入、五層防禦、資源護欄、失敗圖鑑、手寫迴圈 vs LangGraph／CrewAI／AgentCore
   另有非單元類的紀錄：`20260920_上課日誌.md`（a03 下半～a04 的階段性摘要）、`d00_課堂補充.md`。
 
 ### `implements/` — 動手做與驗收
